@@ -3,4 +3,4 @@ project(CIR2TP1C++)
 
 set(CMAKE_CXX_STANDARD 17)
 
-add_executable(CIR2TP1C++ main.cpp)
+add_executable(CIR2TP1C++ main.cpp header.h)

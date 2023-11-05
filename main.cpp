@@ -5,6 +5,10 @@
 #include <map>
 #include <cctype>
 
+/**
+ * Affiche la table de multiplication d'un chiffre donné de 1 à 10.
+ * @param chiffre Le chiffre pour lequel la table de multiplication est affichée.
+ */
 void afficherTableMultiplication(int chiffre) {
     std::cout << "Table de multiplication pour " << chiffre << " :" << std::endl;
 
@@ -13,6 +17,10 @@ void afficherTableMultiplication(int chiffre) {
     }
 }
 
+/**
+ * Analyse le contenu d'un fichier texte pour compter les lignes, les mots,
+ * les lettres et les occurrences de chaque lettre de l'alphabet.
+ */
 auto analyseTextFromFile() {
     std::ifstream fichier("../fichier.txt");
 
@@ -58,14 +66,17 @@ auto analyseTextFromFile() {
     return 0;
 }
 
+/**
+ * Classe représentant un rectangle textuel. Permet de calculer l'aire, le périmètre,
+ * d'imprimer la forme du rectangle et le périmètre avec un caractère donné.
+ */
 class TextRectangle {
 private:
-    int width ;
+    int width;
     int height;
 
-
 public:
-    //Setter
+    // Setter
     void setWidth(int width) {
         if (width > 0 && width < 10) {
             this->width = width;
@@ -76,7 +87,8 @@ public:
             this->height = height;
         }
     }
-    //Getter
+
+    // Getter
     int getWidth() {
         return width;
     }
@@ -95,6 +107,7 @@ public:
     int getPerimeter() {
         return 2 * (width + height);
     }
+
     void print() {
         std::cout << "Width: " << width << std::endl;
         std::cout << "Height: " << height << std::endl;
@@ -125,9 +138,7 @@ public:
         }
         return 0;
     }
-
 };
-
 
 int main() {
     int choix;
@@ -173,8 +184,7 @@ int main() {
         rect.drawPerimeter(pattern);
 
         return 0;
-    }
-    else {
+    } else {
         std::cout << "Choix invalide." << std::endl;
         return 1;
     }
