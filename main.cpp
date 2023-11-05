@@ -63,6 +63,7 @@ private:
     int width ;
     int height;
 
+
 public:
     //Setter
     void setWidth(int width) {
@@ -127,6 +128,7 @@ public:
 
 };
 
+
 int main() {
     int choix;
     std::cout << "Exercice 1 ou Exercice 2 ? (1, 2, 3 ou 4) : ";
@@ -179,7 +181,3 @@ int main() {
 
     return 0;
 }
-
-
-
-
